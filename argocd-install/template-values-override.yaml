@@ -65,7 +65,7 @@ dex:
     enabled: true
 redis:
   image:
-    repository: ${DOCKER_IMAGE_REPO}/library/redis
+    repository: ${DOCKER_IMAGE_REPO}/tks/redis
 controller:
   metrics:
     enabled: true

@@ -6,7 +6,7 @@ DECAPOD_SITE_NAME="decapod-reference"
 DECAPOD_BOOTSTRAP_GIT_REPO_URL="https://github.com/openinfradev/decapod-bootstrap.git"
 DECAPOD_MANIFESTS_GIT_REPO_URL="https://github.com/openinfradev/decapod-manifests.git"
 
-DOCKER_IMAGE_REPO="docker.io"
+DOCKER_IMAGE_REPO="harbor.taco-cat.xyz"
 QUAY_IMAGE_REPO="quay.io"
 GITHUB_IMAGE_REPO="ghcr.io"
 

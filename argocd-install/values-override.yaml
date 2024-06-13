@@ -65,7 +65,7 @@ dex:
     enabled: true
 redis:
   image:
-    repository: docker.io/library/redis
+    repository: harbor.taco-cat.xyz/tks/redis
 controller:
   metrics:
     enabled: true
