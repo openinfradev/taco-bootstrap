@@ -48,11 +48,13 @@ server:
           health_status.status = "Healthy"
           health_status.message = "Prometheus is deployed"
           return health_status
-    resource.customizations.ignoreDifferences.admissionregistration.k8s.io_MutatingWebhookConfiguration: |
+    resource.customizations.ignoreDifferences.admissionregistration.k8s.io_MutatingWebhookConfiguration:
+      |
       jqPathExpressions:
       - '.webhooks[]?.clientConfig.caBundle'
       - '.webhooks[]?.failurePolicy'
-    resource.customizations.ignoreDifferences.admissionregistration.k8s.io_ValidatingWebhookConfiguration: |
+    resource.customizations.ignoreDifferences.admissionregistration.k8s.io_ValidatingWebhookConfiguration:
+      |
       jqPathExpressions:
       - '.webhooks[]?.clientConfig.caBundle'
       - '.webhooks[]?.failurePolicy'
@@ -65,7 +67,7 @@ dex:
     enabled: true
 redis:
   image:
-    repository: ${DOCKER_IMAGE_REPO}/library/redis
+    repository: ${DOCKER_IMAGE_REPO}/tks/redis
 controller:
   metrics:
     enabled: true
